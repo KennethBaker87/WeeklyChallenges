@@ -38,7 +38,7 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            if (nameOfPerson.Length > 0)
+            if (nameOfPerson.Length > 0) //to get past null case must use this instead of == null
             {
                 return $"Hello, {nameOfPerson}!";
             }
